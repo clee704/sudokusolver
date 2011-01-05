@@ -8,7 +8,7 @@ import java.awt.Color;
  * which is independent of symbols or a blank character.
  * </p>
  * <p>
- * This interface must be implement as immutable.
+ * This interface must be implemented as immutable.
  * </p>
  *
  * @author Chungmin Lee
