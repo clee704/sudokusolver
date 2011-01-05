@@ -2,6 +2,7 @@ package net.lemonfactory.sudokusolver.type;
 
 import java.awt.Color;
 import java.util.*;
+import net.lemonfactory.sudokusolver.type.GeneralSudokuTypeStructure.Builder;
 
 public class JigsawTypeStructure implements SudokuTypeStructure {
 
@@ -34,8 +35,7 @@ public class JigsawTypeStructure implements SudokuTypeStructure {
                 map.put(c, new ArrayList<Integer>());
             map.get(c).add(i);
         }
-        GeneralSudokuTypeStructure.Builder builder =
-                GeneralSudokuTypeStructure.getBuilder(structure);
+        Builder builder = GeneralSudokuTypeStructure.getBuilder(structure);
         int i = 0;
         for (char c : map.keySet()) {
             List<Integer> cellGroup = map.get(c);
