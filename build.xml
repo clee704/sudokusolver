@@ -3,8 +3,8 @@
 
 	<property name="version" value="0.7.2"/>
 
-	<property name="src.dir" location="src"/>
-	<property name="test.dir" location="test"/>
+	<property name="src.dir" location="src/main"/>
+	<property name="test.dir" location="src/test"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="doc.dir" location="doc"/>
 	<property name="bin.dir" location="bin"/>
@@ -84,6 +84,7 @@
 	</target>
 
 	<target name="doc">
+		<delete dir="${doc.dir}"/>
 		<mkdir dir="${doc.dir}"/>
 		<javadoc
 		 sourcepath="${src.dir}"
