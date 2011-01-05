@@ -1,0 +1,10 @@
+Simple Sudoku solver GUI application with Java Swing. It uses the following
+techniques to solve a puzzle.
+
+  * Naked Single
+  * Naked Pair
+  * Hidden Pair
+  * Locked Candidates
+  * Trial & Error
+
+Supported languages: English, Korean

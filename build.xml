@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<project name="SudokuSolver" default="compile-debug" basedir=".">
+
+	<property name="version" value="0.7.2"/>
+
+	<property name="src.dir" location="src"/>
+	<property name="test.dir" location="test"/>
+	<property name="lib.dir" location="lib"/>
+	<property name="doc.dir" location="doc"/>
+	<property name="bin.dir" location="bin"/>
+	<property name="debug.dir" location="debug"/>
+	<property name="dist.dir" location="dist"/>
+	<property name="dist.doc.dir" location="dist/doc"/>
+
+	<path id="project.classpath">
+		<pathelement location="${bin.dir}"/>
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="project.classpath.debug">
+		<pathelement location="${debug.dir}"/>
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${doc.dir}"/>
+		<delete dir="${bin.dir}"/>
+		<delete dir="${debug.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="${bin.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${bin.dir}">
+			<classpath refid="project.classpath"/>
+		</javac>
+		<copy todir="${bin.dir}">
+			<fileset dir="${src.dir}" excludes="**/*.java"/>
+		</copy>
+	</target>
+
+	<target name="compile-debug">
+		<mkdir dir="${debug.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${debug.dir}" debug="true">
+			<classpath refid="project.classpath.debug"/>
+		</javac>
+		<copy todir="${debug.dir}">
+			<fileset dir="${src.dir}" excludes="**/*.java"/>
+		</copy>
+	</target>
+
+	<target name="compile-tests" depends="compile-debug">
+		<mkdir dir="${test.dir}"/>
+		<javac srcdir="${test.dir}" destdir="${debug.dir}" debug="true">
+			<classpath refid="project.classpath.debug"/>
+		</javac>
+	</target>
+
+	<target name="test" depends="compile-tests">
+		<junit haltonfailure="true">
+			<classpath refid="project.classpath.debug"/>
+			<formatter usefile="off" type="brief"/>
+			<batchtest>
+				<fileset dir="${debug.dir}" includes="**/*Test.class"/>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="jar" depends="compile">
+		<mkdir dir="${dist.dir}"/>
+		<jar
+		 destfile="${dist.dir}/${ant.project.name}-${version}.jar"
+		 manifest="MANIFEST.MF">
+			<fileset dir="${bin.dir}"/>
+			<fileset dir=".">
+				<include name="LICENSE.txt"/>
+			</fileset>
+			<zipfileset src="${lib.dir}/BrowserLauncher2-1_3.jar" />
+		</jar>
+	</target>
+
+	<target name="doc">
+		<mkdir dir="${doc.dir}"/>
+		<javadoc
+		 sourcepath="${src.dir}"
+		 destdir="${doc.dir}"
+		 charset="utf-8"
+		 encoding="utf-8">
+			<classpath refid="project.classpath"/>
+			<link href="http://java.sun.com/javase/6/docs/api/"/>
+		</javadoc>
+	</target>
+
+	<target name="dist" depends="compile">
+		<mkdir dir="${dist.dir}"/>
+		<zip destfile="${dist.dir}/${ant.project.name}-${version}-src.zip">
+			<fileset dir=".">
+				<exclude name="${doc}/**"/>
+				<exclude name="${bin}/**"/>
+				<exclude name="${debug}/**"/>
+				<exclude name="${dist}/**"/>
+			</fileset>
+		</zip>
+	</target>
+
+</project>
