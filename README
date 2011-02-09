@@ -1,5 +1,4 @@
-Simple Sudoku solver GUI application with Java Swing. It uses the following
-techniques to solve a puzzle.
+It solves sudoku puzzles using the following techniques.
 
   * Naked Single
   * Naked Pair
