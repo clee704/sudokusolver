@@ -5,7 +5,7 @@ import net.lemonfactory.sudokusolver.type.GeneralSudokuTypeStructure.Builder;
 
 /**
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public final class RowColumnTypeStructure implements SudokuTypeStructure {
 

@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
  * ResourceBundle with UTF-8. See
  * http://www.thoughtsabout.net/blog/archives/000044.html.
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  * @version 19 Aug 2008
  */
 class Utf8ResourceBundle {

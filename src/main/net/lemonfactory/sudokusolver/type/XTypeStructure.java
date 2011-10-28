@@ -4,7 +4,7 @@ import java.awt.Color;
 
 /**
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public final class XTypeStructure implements SudokuTypeStructure {
 

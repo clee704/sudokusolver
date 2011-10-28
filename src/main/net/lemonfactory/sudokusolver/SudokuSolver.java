@@ -11,7 +11,7 @@ import net.lemonfactory.sudokusolver.type.*;
  * method by other threads is {@link #abort()}; for other methods, the
  * resulting* behavior is undefined.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  * @see SudokuType
  * @see SudokuTypes
  * @see SudokuTypeStructure

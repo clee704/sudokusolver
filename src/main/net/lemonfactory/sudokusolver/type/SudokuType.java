@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
  * implemented as immutable.
  * </p>
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  * @see net.lemonfactory.sudokusolver.SudokuTypes
  * @see SudokuTypeStructure
  */

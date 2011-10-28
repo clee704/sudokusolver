@@ -3,7 +3,7 @@ package net.lemonfactory.sudokusolver.internal;
 /**
  * BooleanArray implementation of the {@link SimpleSet} interface.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public final class BooleanArraySimpleSet implements SimpleSet {
 

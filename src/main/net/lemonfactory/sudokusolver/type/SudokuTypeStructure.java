@@ -11,7 +11,7 @@ import java.awt.Color;
  * This interface must be implemented as immutable.
  * </p>
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public interface SudokuTypeStructure {
 

@@ -8,7 +8,7 @@ import javax.swing.text.PlainDocument;
 /**
  * Custom {@link JTextField} that can limit the length of the content.
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 @SuppressWarnings("serial")
 final class LimitedTextField extends JTextField {

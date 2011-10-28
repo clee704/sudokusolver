@@ -3,7 +3,7 @@ package net.lemonfactory.sudokusolver.internal;
 /**
  * Binary min-heap implementation of {@link SimpleMinPriorityQueue}.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public class BinaryMinHeap implements SimpleMinPriorityQueue {
 

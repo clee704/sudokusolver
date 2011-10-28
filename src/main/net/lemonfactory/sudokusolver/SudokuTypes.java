@@ -10,7 +10,7 @@ import net.lemonfactory.sudokusolver.type.*;
 /**
  * This class consists of frequently used Sudoku types and related methods.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  * @see SudokuType
  */
 public class SudokuTypes {

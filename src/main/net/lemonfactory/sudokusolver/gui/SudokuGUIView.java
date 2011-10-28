@@ -32,7 +32,7 @@ import edu.stanford.ejalbert.BrowserLauncher;
  * GUI application. Creating an instance of this class will result in
  * showing the GUI frame.
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public final class SudokuGUIView {
 

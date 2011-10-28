@@ -3,7 +3,7 @@ package net.lemonfactory.sudokusolver.internal;
 /**
  * Integer-based minimum priority queue.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public interface SimpleMinPriorityQueue {
 

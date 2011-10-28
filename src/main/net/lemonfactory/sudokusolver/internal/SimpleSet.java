@@ -11,7 +11,7 @@ package net.lemonfactory.sudokusolver.internal;
  * synchronize internally, since it may result in worse performance.
  * </p>
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public interface SimpleSet {
 

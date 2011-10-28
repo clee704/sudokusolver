@@ -12,7 +12,7 @@ import net.lemonfactory.sudokusolver.type.SudokuTypeStructure;
 
 /**
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 final class SudokuGUIModel {
 

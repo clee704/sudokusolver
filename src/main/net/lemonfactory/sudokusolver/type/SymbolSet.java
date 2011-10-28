@@ -2,7 +2,7 @@ package net.lemonfactory.sudokusolver.type;
 
 /**
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public class SymbolSet {
 

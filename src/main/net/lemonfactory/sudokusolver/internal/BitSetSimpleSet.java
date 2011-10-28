@@ -5,7 +5,7 @@ import java.util.BitSet;
 /**
  * BitSet implementation of the {@link SimpleSet} interface.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public final class BitSetSimpleSet implements SimpleSet {
 

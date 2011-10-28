@@ -7,7 +7,7 @@ import java.util.EmptyStackException;
  * Stack implementation with more memory, less time.
  * Thread-safety is not guaranteed.
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public final class OperationStack {
 

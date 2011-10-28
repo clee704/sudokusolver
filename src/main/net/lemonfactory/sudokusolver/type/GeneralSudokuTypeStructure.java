@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  *
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 public class GeneralSudokuTypeStructure implements SudokuTypeStructure {
 

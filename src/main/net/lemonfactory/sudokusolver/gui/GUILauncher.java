@@ -6,7 +6,7 @@ import javax.swing.UIManager;
 /**
  * Starting point for the GUI application.
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 class GUILauncher {
 

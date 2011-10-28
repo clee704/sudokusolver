@@ -10,7 +10,7 @@ import net.lemonfactory.sudokusolver.type.SudokuTypeStructure;
 
 /**
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 @SuppressWarnings("serial")
 final class SudokuBoardPanel extends JComponent {

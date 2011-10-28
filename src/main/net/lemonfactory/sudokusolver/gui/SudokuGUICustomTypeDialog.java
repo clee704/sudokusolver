@@ -19,7 +19,7 @@ import net.lemonfactory.sudokusolver.type.*;
 
 /**
  * 
- * @author Chungmin Lee
+ * @author Choongmin Lee
  */
 class SudokuGUICustomTypeDialog {
 
